@@ -14,14 +14,14 @@ public class SphereMain {
     }
 
     public static double doubleInput(Scanner keyboard) { //checks if input is a double. If not, then will give error and force user to retry
-        double dInput = -1;
+        double dOutput = -1;
 
-        while (dInput == -1) {
+        while (dOutput == -1) {
             try {
-                dInput = keyboard.nextDouble();
+                dOutput = keyboard.nextDouble();
 
-                if (dInput < 0) {
-                    dInput = -1;
+                if (dOutput < 0) {
+                    dOutput = -1;
                     System.out.println("You put in a number less than 0. Please try again.");
                 }
             } catch (InputMismatchException I) {
@@ -30,6 +30,6 @@ public class SphereMain {
             }
         }
 
-        return dInput;
+        return dOutput;
     }
 }
