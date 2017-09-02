@@ -13,7 +13,7 @@ public class SphereMain {
         System.out.println("Volume: " + (4 / 3) * Math.PI * Math.pow(radius, 3));
     }
 
-    public static double doubleInput(Scanner keyboard) { //checks if input is a double. If not, then will give error and force user to retry
+    public static double dInput(Scanner keyboard) { //checks if input is a double. If not, then will give error and force user to retry
         double dOutput = -1;
 
         while (dOutput == -1) {
