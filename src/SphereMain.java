@@ -6,7 +6,7 @@ public class SphereMain {
         Scanner keyboard = new Scanner(System.in);
 
         System.out.println("Please input the radius of the sphere you are trying to solve.");
-        double radius = doubleInput(keyboard);
+        double radius = dInput(keyboard);
         System.out.println("Diameter: " + radius * 2);
         System.out.println("Circumference: " + 2 * Math.PI * radius);
         System.out.println("Surface Area: " + 4 * Math.PI * Math.pow(radius, 2));
@@ -15,7 +15,6 @@ public class SphereMain {
 
     public static double dInput(Scanner keyboard) { //checks if input is a double. If not, then will give error and force user to retry
         double dOutput = -1;
-
         while (dOutput == -1) {
             try {
                 dOutput = keyboard.nextDouble();
@@ -29,7 +28,6 @@ public class SphereMain {
                 keyboard.next();
             }
         }
-
         return dOutput;
     }
 }
