@@ -6,7 +6,7 @@ public class SphereMain {
         Scanner keyboard = new Scanner(System.in);
 
         System.out.println("Please input the radius of the sphere you are trying to solve.");
-        double radius = doubleInput(keyboard);
+        double radius = dInput(keyboard);
         System.out.println("Diameter: " + radius * 2);
         System.out.println("Circumference: " + 2 * Math.PI * radius);
         System.out.println("Surface Area: " + 4 * Math.PI * Math.pow(radius, 2));
