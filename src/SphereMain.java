@@ -15,7 +15,6 @@ public class SphereMain {
 
     public static double dInput(Scanner keyboard) { //checks if input is a double. If not, then will give error and force user to retry
         double dOutput = -1;
-
         while (dOutput == -1) {
             try {
                 dOutput = keyboard.nextDouble();
@@ -29,7 +28,6 @@ public class SphereMain {
                 keyboard.next();
             }
         }
-
         return dOutput;
     }
 }
